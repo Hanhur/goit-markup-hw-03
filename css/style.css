@@ -48,7 +48,8 @@ h2,
 h3,
 h4,
 h5,
-h6 
+h6,
+p
 {
     margin: 0;
 }
@@ -61,12 +62,12 @@ img
 
 .container
 {
-    max-width: 1440px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-/*    outline: 2px solid tomato;*/
+    /* outline: 2px solid tomato; */
 }
 
 /*header*/
@@ -75,7 +76,7 @@ img
     font-weight: 700;
     box-sizing: border-box;
     background: var(--white);
-    border-bottom: 1px solid var(--white);   
+    border-bottom: 1px solid var(--color-cornflower);   
 }
 
 .header .container
@@ -132,9 +133,8 @@ img
     color: var(--button-color);
 }
 
-.connect
+.address
 {
-    display: flex;
     margin-left: auto;
 }
 
@@ -154,22 +154,6 @@ img
     display: flex;
     align-items: center;
 }
-.mail
-{
-    position: absolute;
-    width: 153px;
-    height: 24px;
-    left: 940px;
-    top: 24px;
-}
-.tel
-{
-    position: absolute;
-    width: 151px;
-    height: 24px;
-    left: 1133px;
-    top: 24px;
-}
 .contact-link:hover,
 .contact-link:focus
 {
@@ -185,6 +169,7 @@ img
 {
     background: var(--color-navy-blue);
     text-align: center;
+    padding: 188px 0;
 }
 
 /*main container */
@@ -196,9 +181,10 @@ img
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white);
-
-    padding-top: 188px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button
@@ -213,10 +199,10 @@ img
     border-radius: 4px;
     color: var(--white);
     cursor: pointer;
-
+    margin-left: auto;
+    margin-right: auto;
     padding: 16px 32px;
-    margin-bottom: 188px;
-
+    border: none;
 }
 .button:hover,
 .button:focus
@@ -229,29 +215,17 @@ img
 .filter-list
 {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
     justify-content: center;
-    margin-top: 96px;
     margin-bottom: 72px;
+    gap: 24px;
 }
 
-.filter-item
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    margin-right: 8px;
-}
 .buttons-portfolio
 {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.15;
-    padding: 5px 24px;
+    padding: 12px 24px;
     letter-spacing: 0.04em;
     border-color: var(--white);
     background: var(--white);
@@ -260,7 +234,7 @@ img
     cursor: pointer; 
     text-align: center; 
     background-color: var(--color-cloud);
-    border: none;
+    border: 1px solid var(--color-cornflower);
 }
 
 .buttons-portfolio:hover,
@@ -273,21 +247,16 @@ img
 }
 .portfolio-list
 {
+    background: var(--white);
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 48px;
+    gap: 48px 24px;
 }
-.portfolio-item
-{
-    margin-bottom: 32px;
-}
+
 .advantages-list
 {
    display: flex; 
-   position: relative;
-   margin-top: 120px;
-   margin-bottom: 120px;
+   gap: 24px;
 }
 .advantages-title
 {
@@ -307,9 +276,7 @@ img
 {
     padding: 0;
     margin-top: 8px;
-    margin-right: 24px;
-
-    font-weight: 400;
+   
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -320,11 +287,15 @@ img
 /*-our team*/
 .section
 {
-    padding-top: 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}.team-section
+{
+    background-color: var(--color-cloud);
 }
 .section-title
 {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
     font-weight: 700;
     font-size: 36px;
@@ -338,29 +309,17 @@ img
 {
     display: flex;
     padding: 0px;
-}
-.section-item
-{
-    position: relative;
+    gap: 24px;
 }
 .section-img
 {
-    margin-right: 24px;
     border: 1px solid var(--color-cornflower);
 }
-.team-section
-{
-    margin-top: 120px;
-    margin-bottom: 0;
-}
-.name
-{
-    padding-top: 120px;
-}
+
 .team-list
 {
     display: flex;
-
+    gap: 24px;
 }
 
 .team-name
@@ -391,15 +350,14 @@ img
 .footer
 {
     padding: 100px 100px;
-    height: 310px;
+
     background: var(--color-navy-blue);
     color: var(--color-cornflower);
 }
 
 .footer-logo
 {
-    padding-top: 100px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
@@ -413,11 +371,12 @@ img
 {
     color: var(--color-cloud);
 }
-
-.footer-text
+.footer-content
 {
     padding-top: 16px;
     padding-bottom: 100px;
+    width: 264px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.15;
